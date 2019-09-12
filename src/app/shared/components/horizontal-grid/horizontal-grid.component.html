@@ -1,2 +1,4 @@
-<input type="text" [(ngModel)]="username">
-<span>你好，{{tip}}</span>
+<div appGridItem *ngFor="let channel of channels">
+    <img [appGridItemImage]="'3rem'" [src]="channel.url"/>
+    <span GridItemTitleDirective >{{channel.title}}</span>
+</div>

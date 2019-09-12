@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Tabs, Slider} from 'src/app/model/home'
+import { Tabs, Slider, Channel} from 'src/app/model/home'
 import { ImageSliderComponent } from './shared/components/image-slider/image-slider.component';
    
 
@@ -49,6 +49,16 @@ export class AppComponent {
             imgUrl: 'http://a.hiphotos.baidu.com/image/h%3D300/sign=a62e824376d98d1069d40a31113eb807/838ba61ea8d3fd1fc9c7b6853a4e251f94ca5f46.jpg',
             caption: '我是图片三'
         },
+    ]
+
+    channelsData: Channel[] = [
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+        { id: 1, title: '女装', url:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3655477213,4176881162&fm=15&gp=0.jpg'},
+
     ]
     onSelect(i:number){
         console.log(i)
