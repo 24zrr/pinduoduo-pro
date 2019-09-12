@@ -25,15 +25,15 @@ export class ImageSliderComponent implements OnInit {
         if (this.intervalBySeconds <= 0) {
             return;
         }
-        this.intervalId = setInterval(() => {
-            this.rd2.setProperty(
-                this.imgSlider.nativeElement,
-                'scrollLeft',
-                (this.getIndex(++this.selectedIndex) *
-                    this.imgSlider.nativeElement.scrollWidth) /
-                this.sliders.length
-            );
-        }, this.intervalBySeconds * 1000);
+        // this.intervalId = setInterval(() => {
+        //     this.rd2.setProperty(
+        //         this.imgSlider.nativeElement,
+        //         'scrollLeft',
+        //         (this.getIndex(++this.selectedIndex) *
+        //             this.imgSlider.nativeElement.scrollWidth) /
+        //         this.sliders.length
+        //     );
+        // }, this.intervalBySeconds * 1000);
     }
 
     ngOnDestroy(): void {

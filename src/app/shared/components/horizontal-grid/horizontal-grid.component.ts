@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Emoji } from '../../decorators';
 
 @Component({
     selector: 'app-horizontal-grid',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./horizontal-grid.component.css']
 })
 export class HorizontalGridComponent implements OnInit {
-
-    username = ''
+    @Emoji() tip = 'hello'
+    
     constructor() { }
 
     ngOnInit() {

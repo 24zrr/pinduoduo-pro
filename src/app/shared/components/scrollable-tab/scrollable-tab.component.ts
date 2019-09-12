@@ -6,7 +6,6 @@ import { Tabs } from 'src/app/model/home'
   templateUrl: './scrollable-tab.component.html',
   styleUrls: ['./scrollable-tab.component.scss']
 })
-
 export class ScrollableTabComponent implements OnInit {
     @Input() public bgColor:string
     @Input() public menus: Tabs[] = []
