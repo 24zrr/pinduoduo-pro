@@ -7,6 +7,7 @@ import { HorizontalGridComponent } from './components/horizontal-grid/horizontal
 import { GridItemDirective } from './directives/grid-item.directive';
 import { GridItemTitleDirective } from './directives/grid-item-title.directive';
 import { GridItemImageDirective } from './directives/grid-item-image.directive';
+import { MyPipePipe } from './pipe/my-pipe.pipe';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { GridItemImageDirective } from './directives/grid-item-image.directive';
         HorizontalGridComponent,
         GridItemDirective,
         GridItemTitleDirective,
-        GridItemImageDirective
+        GridItemImageDirective,
+        MyPipePipe
     ],
     imports: [
         CommonModule,
@@ -30,7 +32,8 @@ import { GridItemImageDirective } from './directives/grid-item-image.directive';
         HorizontalGridComponent,
         GridItemDirective,
         GridItemTitleDirective,
-        GridItemImageDirective
+        GridItemImageDirective,
+        MyPipePipe
     ]
 
 })

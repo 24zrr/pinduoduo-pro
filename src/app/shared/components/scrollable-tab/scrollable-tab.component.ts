@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Tabs } from 'src/app/model/home'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-scrollable-tab',

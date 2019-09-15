@@ -1,0 +1,16 @@
+
+<ng-container *ngIf="selectedTab === 'hot';else other" >
+  <app-image-slider [sliders]="imageSliders"></app-image-slider>
+  <app-horizontal-grid >
+      <span appGridItem *ngFor="let item of channelsData">
+          <img appGridItemImage="2rem" [src]="item.url" alt="" />
+          <span appGridItemTitle="0.6rem" class="title">{{ item.title }}</span>
+        </span>
+  </app-horizontal-grid>
+</ng-container>
+<ng-template #other>123</ng-template>
+
+
+<a [routerLink]="['grand']" routerLinkActive="active">打开孙组件</a>
+<router-outlet></router-outlet>
+
